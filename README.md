@@ -27,7 +27,7 @@
         .neon-magenta { text-shadow: 0 0 10px var(--neon-magenta), 0 0 20px var(--neon-magenta), 0 0 40px var(--neon-magenta); }
         
         .hero-banner {
-            background-image: url('https://i.imgur.com/QyJDNsR.png'); /* ← Your Banner */
+            background-image: url('https://i.imgur.com/QyJDNsR.png'); /* Your Banner */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -115,7 +115,7 @@
     <nav class="bg-black/80 backdrop-blur-lg border-b border-[#00f0ff]/30 fixed w-full z-50">
         <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
             <div class="flex items-center gap-4">
-                <img src="https://i.imgur.com/HPdPah.png" alt="KOVA REALITY Logo" class="kova-logo"> <!-- ← Your Logo -->
+                <img src="https://i.imgur.com/HPdPah.png" alt="KOVA REALITY Logo" class="kova-logo">
                 <div class="hidden sm:block">
                     <h1 class="text-4xl font-orbitron tracking-[4px] neon-cyan">KOVA</h1>
                     <h1 class="text-4xl font-orbitron tracking-[4px] -mt-3 neon-magenta">REALITY</h1>
@@ -149,7 +149,7 @@
         </div>
     </nav>
 
-    <!-- HERO BANNER (your new banner) -->
+    <!-- HERO BANNER -->
     <section id="home" class="hero-banner flex items-center relative scanlines">
         <canvas id="particle-canvas"></canvas>
         
@@ -157,7 +157,7 @@
             <div class="flex flex-col md:flex-row items-center justify-between gap-12 pt-28">
                 <div class="space-y-6 max-w-xl">
                     <div class="flex items-center gap-6">
-                        <img src="https://i.imgur.com/HPdPah.png" alt="KOVA REALITY Logo" class="w-20 h-20"> <!-- ← Your Logo -->
+                        <img src="https://i.imgur.com/HPdPah.png" alt="KOVA REALITY Logo" class="w-20 h-20">
                         <div>
                             <h1 class="text-7xl md:text-8xl font-orbitron font-black glitch neon-cyan tracking-[-4px]">KOVA</h1>
                             <h1 class="text-7xl md:text-8xl font-orbitron font-black glitch neon-magenta -mt-4">REALITY</h1>
@@ -189,7 +189,7 @@
         </div>
     </section>
 
-    <!-- ABOUT THE TEAM (your team photo) -->
+    <!-- ABOUT THE TEAM -->
     <section id="about" class="py-24 bg-[#0a0a1f]">
         <div class="max-w-screen-2xl mx-auto px-8">
             <div class="text-center mb-16">
@@ -204,7 +204,7 @@
                 </div>
                 <div class="md:col-span-5">
                     <div class="rounded-3xl overflow-hidden border border-[#00f0ff]/30">
-                        <img src="https://i.imgur.com/n0haqEk.png" alt="KOVA REALITY Team" class="w-full"> <!-- ← Your Team Photo -->
+                        <img src="https://i.imgur.com/n0haqEk.png" alt="KOVA REALITY Team" class="w-full">
                     </div>
                 </div>
             </div>
@@ -245,7 +245,6 @@
     </section>
 
     <script>
-        // Particle background
         function createParticles() {
             const canvas = document.getElementById('particle-canvas');
             if (!canvas) return;
@@ -296,3 +295,4 @@
     </script>
 </body>
 </html>
+
