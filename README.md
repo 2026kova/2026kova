@@ -27,11 +27,11 @@
         .neon-magenta { text-shadow: 0 0 10px var(--neon-magenta), 0 0 20px var(--neon-magenta), 0 0 40px var(--neon-magenta); }
         
         .hero-banner {
-            background-image: url('https://i.imgur.com/QyJDNsR.png'); /* Your Banner */
+            background-image: url('https://i.imgur.com/QyJDNsR.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 420px;
+            min-height: 480px; /* Slightly taller for better visual balance */
             position: relative;
         }
         
@@ -111,8 +111,8 @@
 </head>
 <body class="bg-[#05050f] text-white overflow-x-hidden">
 
-    <!-- NAVBAR -->
-    <nav class="bg-black/80 backdrop-blur-lg border-b border-[#00f0ff]/30 fixed w-full z-50">
+    <!-- NAVBAR - Fixed at top -->
+    <nav class="bg-black/80 backdrop-blur-lg border-b border-[#00f0ff]/30 fixed w-full z-50 top-0">
         <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <img src="https://i.imgur.com/HPdPah.png" alt="KOVA REALITY Logo" class="kova-logo">
@@ -140,6 +140,7 @@
             </div>
         </div>
         
+        <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-black/95 backdrop-blur-xl border-t border-[#00f0ff]/30 px-8 py-6">
             <div class="flex flex-col gap-6 text-xl text-center">
                 <a onclick="navigateTo('home');toggleMobileMenu()" class="py-2">HOME</a>
@@ -149,12 +150,12 @@
         </div>
     </nav>
 
-    <!-- HERO BANNER -->
-    <section id="home" class="hero-banner flex items-center relative scanlines">
+    <!-- HERO BANNER - Added extra top padding to prevent overlap with fixed navbar -->
+    <section id="home" class="hero-banner flex items-center relative scanlines pt-20">
         <canvas id="particle-canvas"></canvas>
         
         <div class="max-w-screen-2xl mx-auto px-8 relative z-20">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12 pt-28">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12 pt-12">
                 <div class="space-y-6 max-w-xl">
                     <div class="flex items-center gap-6">
                         <img src="https://i.imgur.com/HPdPah.png" alt="KOVA REALITY Logo" class="w-20 h-20">
@@ -295,4 +296,5 @@
     </script>
 </body>
 </html>
+
 
